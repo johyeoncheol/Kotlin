@@ -18,10 +18,20 @@ class Customer(){
         set(value) {field = value}
 }
 
-open class AA(x: Int){
- open fun v(){}
+open class AA(){
+    open fun f(){
+        println("AAAAAAAA");
+    }
 }
 
-class BB : AA(1) {
-    override fun v() {}
+interface BB{
+    fun f(){
+        println("BBBBBBBBB");
+    }
+}
+
+class CC : AA(),BB{
+    override fun f() {
+        super<AA>.f()
+    }
 }

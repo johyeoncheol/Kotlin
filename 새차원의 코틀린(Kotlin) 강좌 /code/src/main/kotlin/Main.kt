@@ -19,9 +19,9 @@ class Customer(){
 }
 
 open class AA(x: Int){
-
+ open fun v(){}
 }
 
 class BB : AA(1) {
-
+    override fun v() {}
 }

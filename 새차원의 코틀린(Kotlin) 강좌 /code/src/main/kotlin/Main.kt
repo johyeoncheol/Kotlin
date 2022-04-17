@@ -17,3 +17,11 @@ class Customer(){
         get(){ return field }
         set(value) {field = value}
 }
+
+open class AA(x: Int){
+
+}
+
+class BB : AA(1) {
+
+}

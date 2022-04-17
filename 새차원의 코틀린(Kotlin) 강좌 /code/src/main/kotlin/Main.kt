@@ -5,14 +5,15 @@ fun main(args: Array<String>) {
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
     println("Program arguments: ${args.joinToString()}")
 
-    var obj = Customer("kotlin");
-    println(obj);
+    var obj = Customer();
+    obj.fullname="kotlin"
+    println(obj.fullname);
 
     test();
 }
 
-class Customer(name : String){
-    init{
-        println("이름 : $name");
-    }
+class Customer(){
+    var fullname = ""
+        get(){ return field }
+        set(value) {field = value}
 }
